@@ -55,13 +55,10 @@ jobs:
     - name: Create Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
 
-    - name: Connect to RDP  [CPU 2 Core - 7GB Ram - 256 SSD]
+    - name: CONNECT TO RDP 
       run: cmd /c start.bat
 
-    - name: Install Winrar
-      run: cmd /c C:\Users\Public\Desktop\winrar.exe winrar.exe /s
-
-    - name: Set time
+    - name: SET TIME
       run: cmd /c C:\Users\Public\Desktop\b1.bat
 
     - name: RUN EXTRACT
@@ -69,3 +66,5 @@ jobs:
 
     - name: RUN AI
       run: cmd /c onAi.bat
+
+
